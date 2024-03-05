@@ -15,6 +15,10 @@ def hello():  # put application's code here
 def practice():  # put application's code here
     return render_template('about.html')
 
+@app.route('/about-css')
+def practice():  # put application's code here
+    return render_template('about-css.html')
+
 
 if __name__ == '__main__':
     app.run()
