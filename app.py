@@ -20,7 +20,7 @@ def about_css():  # put application's code here
     return render_template('about-css.html')
 
 @app.route('/base')
-def about_css():  # put application's code here
+def base():  # put application's code here
     return render_template('base.html')
 
 @app.route('/favorite-course')
