@@ -16,3 +16,4 @@ def role_required(roles):
             return func(*args, *kwargs)
         return wrapper
     return decorator
+
