@@ -206,6 +206,13 @@ def student_delete(student_id):
 
     return redirect(url_for('student_view_all'))
 
+# New route with login required, authorized for MANAGER and ADMIN
+@app.route('/training')
+@login_required
+@role_required(['MANAGER', 'ADMIN'])
+def training():
+    return render_template('training.html')
+
 
 @app.route('/error')
 def error():
